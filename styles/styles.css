@@ -75,6 +75,7 @@ nav .navigation ul li a {
   transition: 0.3s ease;
 }
 
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
   color: #fdc93b;
 }
