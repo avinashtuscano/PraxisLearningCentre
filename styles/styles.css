@@ -246,6 +246,7 @@ footer p {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #about-container .about-text .about-fe img {
@@ -328,4 +329,29 @@ footer p {
     padding: 8vw 8vw 4vw 8vw;
     text-align: center;
   }
+
+  #about-container {
+    padding: 8vw 4vw 2vw 4vw;
+  }
+    #about-container .about-img {      
+      padding-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+  #about-container {
+    flex-direction: column;
+  }
+  #about-container .about-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #about-container .about-text {
+    width: 100%;
+
+  }
+
 }
