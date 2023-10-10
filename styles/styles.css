@@ -212,6 +212,8 @@ footer p {
   text-align: center;
 }
 
+/* About Styles */
+
 #about-container {
   display: flex;
   align-items: center;
@@ -219,7 +221,7 @@ footer p {
 }
 
 #about-container .about-img {
-  width: 60%;
+  width: 40%;
   padding-right: 60px;
 }
 
@@ -228,7 +230,7 @@ footer p {
 }
 
 #about-container .about-text {
-  width: 40%;
+  width: 60%;
 }
 
 #about-container .about-text h2 {
@@ -261,6 +263,61 @@ footer p {
 }
 
 #about-container .about-text .about-fe .fe-text h5 {
+  font-size: 16px;
+  color: #29303b;
+}
+
+/* Mission Styles */
+
+#mission-container {
+  display: flex;
+  align-items: center;
+  padding: 8vw 8vw 2vw 8vw;
+}
+
+#mission-container .mission-img {
+  width: 40%;
+}
+
+#mission-container .mission-img img {
+  width: 100%;
+}
+
+#mission-container .mission-text {
+  width: 60%;
+  padding-right: 60px;
+}
+
+#mission-container .mission-text h2 {
+  color: #29303b;
+  padding-bottom: 15px;
+}
+
+#mission-container .mission-text p {
+  color: #686f7a;
+  font-weight: 300;
+}
+
+#mission-container .mission-text .mission-fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#mission-container .mission-text .mission-fe img {
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+#mission-container .mission-text .mission-fe .fe-text {
+  width: 90%;
+}
+
+#mission-container .mission-text .mission-fe .fe-text h5 {
   font-size: 16px;
   color: #29303b;
 }
@@ -329,18 +386,6 @@ footer p {
     padding: 8vw 8vw 4vw 8vw;
     text-align: center;
   }
-
-  #about-container {
-    padding: 8vw 4vw 2vw 4vw;
-  }
-    #about-container .about-img {      
-      padding-right: 30px;
-    }
-
-}
-
-@media screen and (max-width: 475px) {
-
   #about-container {
     flex-direction: column;
   }
@@ -351,7 +396,19 @@ footer p {
 
   #about-container .about-text {
     width: 100%;
+  }
+}
 
+@media screen and (max-width: 475px) {
+  #about-container {
+    flex-direction: column;
+  }
+  #about-container .about-img {
+    width: 100%;
+    padding-right: 0;
   }
 
+  #about-container .about-text {
+    width: 100%;
+  }
 }
