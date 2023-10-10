@@ -272,7 +272,7 @@ footer p {
 #mission-container {
   display: flex;
   align-items: center;
-  padding: 8vw 8vw 2vw 8vw;
+  padding: 8vw 8vw 8vw 8vw;
 }
 
 #mission-container .mission-img {
@@ -386,6 +386,7 @@ footer p {
     padding: 8vw 8vw 4vw 8vw;
     text-align: center;
   }
+  /* About */
   #about-container {
     flex-direction: column;
   }
@@ -395,6 +396,19 @@ footer p {
   }
 
   #about-container .about-text {
+    width: 100%;
+  }
+  /* Philosophy */
+
+  #mission-container {
+    flex-direction: column-reverse;
+  }
+  #mission-container .mission-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #mission-container .mission-text {
     width: 100%;
   }
 }
@@ -409,6 +423,20 @@ footer p {
   }
 
   #about-container .about-text {
+    width: 100%;
+  }
+
+  /* Philosophy */
+
+  #mission-container {
+    flex-direction: column-reverse;
+  }
+  #mission-container .mission-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #mission-container .mission-text {
     width: 100%;
   }
 }
