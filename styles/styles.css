@@ -45,6 +45,8 @@ nav {
 
 nav img {
   cursor: pointer;
+  width: 89px;
+  height: 110px;
 }
 
 nav .navigation ul {
@@ -86,7 +88,7 @@ nav .navigation ul li a:hover {
 
 #home {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
-    url("../img/back.JPG");
+    url("../img/back_2.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -577,12 +579,65 @@ footer p {
   width: 100% !important;
 }
 
+/* Gallery Styles */
+#gallery-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("../img/gallery.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#gallery-home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+#gallery-container {
+  padding: 8vw 8vw 8vw 8vw;
+  text-align: center;
+}
+
+#gallery-container .school{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#gallery-container .school figure {
+  background-color: #fafaf1;
+    padding: 30px 10px;
+}
+
+#gallery-container .school img {
+  width: 100%;  
+  /* padding-top: 10vh; */
+  border-radius: 19px;
+  height: 100%;
+  
+}
+
+#gallery-container .school figcaption {
+text-align: center;
+}
+
 @media screen and (max-width: 769px) {
+
+
   nav {
     padding: 15px 20px;
   }
   nav img {
-    width: 130px;
+    /* width: 130px; */
+    width: 89px;
   }
 
   #menu-btn {
