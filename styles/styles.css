@@ -20,7 +20,7 @@ h1 {
   color: rgb(35, 35, 85);
 }
 
-span {
+#home p span {
   font-size: 0.9rem;
   color: #f9f9ff9e;
   text-wrap: nowrap;
