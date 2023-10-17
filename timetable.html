@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Term Holidays - Praxis Learning Centre</title>
+    <!-- add icon link -->
+    <link rel="icon" href="./img/praxis-logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/5da7f1b67b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"
+        ><img src="./img/praxis-logo2.png" alt="Praxis Logo"
+      /></a>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa-solid fa-xmark"></i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="active" href="./articles.html">Articles</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./safeguard.html">Safeguarding</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <section id="tt-container">
+      <div class="blogs timetable">
+        <div class="post">
+          <div class="post-img">
+            <img src="./img/tt_page.jpg" alt="writing" />
+          </div>
+
+          <h3>School Term Holidays</h3>
+          <div class="tt" style="overflow-x: auto">
+            <table>
+              <tr>
+                <th>Sl. No</th>
+                <th>Holiday</th>
+                <th>Date/No:of Days</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Bakr I'd</td>
+                <td>1 day*</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ganesh Chaturthi</td>
+                <td>2 days*</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Independence Day</td>
+                <td>Flag hoisting and cultural programme in school</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Gandhi Jayanti</td>
+                <td>2nd October</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Dasshera</td>
+                <td>2 days*</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Children's Day</td>
+                <td>14th November</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Deepavali</td>
+                <td>2 days*</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>Christmas</td>
+                <td>23rd December to 27th December</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>New Year's Eve</td>
+                <td>31st December</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>New Year's Day</td>
+                <td>1st January</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Makar Sankranti</td>
+                <td>1 day*</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Republic Day</td>
+                <td>26th January</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>School Day</td>
+                <td>11th February</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Mahashivratri</td>
+                <td>1 day*</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Maundy Thursday</td>
+                <td>1 day*</td>
+              </tr>
+
+              <tr>
+                <td>16</td>
+                <td>Good Friday</td>
+                <td>1 day*</td>
+              </tr>
+
+              <tr>
+                <td>17</td>
+                <td>Holy Saturday</td>
+                <td>1 day*</td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>Ambedkar Jayanti</td>
+                <td>14th April</td>
+              </tr>
+            </table>
+            <p>School opens first Monday of June</p>
+            <p>School closes from 15th April</p>
+            <p>*Days with no dates depend on changes in lunar calendar</p>
+          </div>
+          <a href="#">Read Next</a>
+          <a href="./articles.html">Back to Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright &copy;2024 Praxis Learning Centre</p>
+      </div>
+    </footer>
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

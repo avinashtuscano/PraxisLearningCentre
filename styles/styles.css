@@ -605,33 +605,132 @@ footer p {
   text-align: center;
 }
 
-#gallery-container .school{
+#gallery-container .school {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-    margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
 }
 
 #gallery-container .school figure {
   background-color: #fafaf1;
-    padding: 30px 10px;
+  padding: 30px 10px;
 }
 
 #gallery-container .school img {
-  width: 100%;  
+  width: 100%;
   /* padding-top: 10vh; */
   border-radius: 19px;
   height: 100%;
-  
 }
 
 #gallery-container .school figcaption {
-text-align: center;
+  text-align: center;
+}
+
+/* Timetable Styles*/
+
+#tt-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8vw;
+}
+
+#tt-container .blogs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+#tt-container .blogs img {
+  width: 60%;
+  border-radius: 19px;
+}
+
+#tt-container .blogs .post {
+  padding-bottom: 60px;
+}
+
+#tt-container .blogs .post h3 {
+  color: #29303b;
+  padding: 15px 0 10px 0;
+}
+
+#tt-container .blogs .post p {
+  color: #757373;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+#tt-container .blogs .post p:last-child {
+  padding-bottom: 60px;
+}
+
+#tt-container .blogs .post a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#tt-container .timetable {
+  width: 60%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 30px;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #fafaf1;
+}
+
+/* Safeguarding Styles */
+
+#safe-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("../img/safeguarding.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#safe-home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 769px) {
-
-
   nav {
     padding: 15px 20px;
   }
@@ -740,6 +839,22 @@ text-align: center;
   }
 
   #blog-container .blogpost img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  /* Responsive TT */
+  #tt-container {
+    padding: 8vw 4vw;
+  }
+
+  #tt-container .timetable {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #tt-container .timetable img {
     width: 100%;
     height: 50vh;
     object-fit: cover;

@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery - Praxis Learning Centre</title>
     <!-- add icon link -->
-    <link rel="icon" href="./img/praxis-logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/5da7f1b67b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/praxis-logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/5da7f1b67b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/lightbox.css" />
     <script src="./js/lightbox.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <img src="./img/praxis-logo2.png" alt="Praxis Logo" />
-        <div class="navigation">
-            <ul>
-                <i id="menu-close" class="fa-solid fa-xmark"></i>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a  href="./articles.html">Articles</a></li>
-                <li><a class="active" href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-            <i id="menu-btn" class="fa-solid fa-bars"></i>
-        </div>
+      <a href="./index.html"
+        ><img src="./img/praxis-logo2.png" alt="Praxis Logo"
+      /></a>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa-solid fa-xmark"></i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./articles.html">Articles</a></li>
+          <li><a class="active" href="./gallery.html">Gallery</a></li>
+          <li><a href="./safeguard.html">Safeguarding</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+      </div>
     </nav>
-        <section id="gallery-home">
-            <h2>School Gallery</h2>
-        </section>
+    <section id="gallery-home">
+      <h2>School Gallery</h2>
+    </section>
     <section id="gallery-container">
-        <!-- <h1>School Gallery</h1> -->
-        <div class="school">
-            <figure>
-                <a href="./img/school.jpg" data-lightbox="school" data-title="School Building">
-                <img src="./img/school.jpg" alt="School">
-                </a>
-                <figcaption>School Building</figcaption>
-            </figure>
+      <!-- <h1>School Gallery</h1> -->
+      <div class="school">
+        <figure>
+          <a
+            href="./img/school.jpg"
+            data-lightbox="school"
+            data-title="School Building"
+          >
+            <img src="./img/school.jpg" alt="School" />
+          </a>
+          <figcaption>School Building</figcaption>
+        </figure>
 
-            <figure>
-                <a href="./img/library-1.jpg" data-lightbox="school" data-title="Library Resources">
-                    <img src="./img/library-1.jpg" alt="World Books">
-                </a>
-                <figcaption>Library Resources - 1</figcaption>
-            </figure>
+        <figure>
+          <a
+            href="./img/library-1.jpg"
+            data-lightbox="school"
+            data-title="Library Resources"
+          >
+            <img src="./img/library-1.jpg" alt="World Books" />
+          </a>
+          <figcaption>Library Resources - 1</figcaption>
+        </figure>
 
-            <figure>
-                <a href="./img/library-2.jpg" data-lightbox="school" data-title="Library Resources">
-                    <img src="./img/library-2.jpg" alt="Childcraft Books">
-                </a>
-                <figcaption>Library Resources - 2</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/library-3.jpg" data-lightbox="school" data-title="Library Resources">
-                    <img src="./img/library-3.jpg" alt="Story Books">
-                </a>
-                <figcaption>Library Resources - 3</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/bus.jpg" data-lightbox="school" data-title="School Transport">
-                    <img src="./img/bus.jpg" alt="School Transport">
-                </a>
-                <figcaption>School Transport</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/greenday.jpg" data-lightbox="school" data-title="Greenday Celebration">
-                    <img src="./img/greenday.jpg" alt="Greenday Celebration">
-                </a>
-                <figcaption>Greenday Celebration</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/independence_1.jpg" data-lightbox="school" data-title="Independence Day Celebration">
-                    <img src="./img/independence_1.jpg" alt="Independence Day Celebration">
-                </a>
-                <figcaption>Independence Day</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/independence_2.jpg" data-lightbox="school" data-title="Independence Day Celebration">
-                    <img src="./img/independence_2.jpg" alt="Independence Day Celebration">
-                </a>
-                <figcaption>Independence Day</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/independence_3.jpg" data-lightbox="school" data-title="Independence Day Celebration">
-                    <img src="./img/independence_3.jpg" alt="Independence Day Celebration">
-                </a>
-                <figcaption>Independence Day</figcaption>
-            </figure>
-            <figure>
-                <a href="./img/classroom.jpg" data-lightbox="school" data-title="Primary Classroom">
-                    <img src="./img/classroom.jpg" alt="Primary Classroom">
-                </a>
-                <figcaption>Primary Classroom</figcaption>
-            </figure>
-        </div>
+        <figure>
+          <a
+            href="./img/library-2.jpg"
+            data-lightbox="school"
+            data-title="Library Resources"
+          >
+            <img src="./img/library-2.jpg" alt="Childcraft Books" />
+          </a>
+          <figcaption>Library Resources - 2</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/library-3.jpg"
+            data-lightbox="school"
+            data-title="Library Resources"
+          >
+            <img src="./img/library-3.jpg" alt="Story Books" />
+          </a>
+          <figcaption>Library Resources - 3</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/bus.jpg"
+            data-lightbox="school"
+            data-title="School Transport"
+          >
+            <img src="./img/bus.jpg" alt="School Transport" />
+          </a>
+          <figcaption>School Transport</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/greenday.jpg"
+            data-lightbox="school"
+            data-title="Greenday Celebration"
+          >
+            <img src="./img/greenday.jpg" alt="Greenday Celebration" />
+          </a>
+          <figcaption>Greenday Celebration</figcaption>
+        </figure>
+
+        <figure>
+          <a
+            href="./img/independence_2.jpg"
+            data-lightbox="school"
+            data-title="Independence Day Celebration"
+          >
+            <img
+              src="./img/independence_2.jpg"
+              alt="Independence Day Celebration"
+            />
+          </a>
+          <figcaption>Independence Day</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/independence_3.jpg"
+            data-lightbox="school"
+            data-title="Independence Day Celebration"
+          >
+            <img
+              src="./img/independence_3.jpg"
+              alt="Independence Day Celebration"
+            />
+          </a>
+          <figcaption>Independence Day</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/classroom.jpg"
+            data-lightbox="school"
+            data-title="Primary Classroom"
+          >
+            <img src="./img/classroom.jpg" alt="Primary Classroom" />
+          </a>
+          <figcaption>Primary Classroom</figcaption>
+        </figure>
+      </div>
     </section>
     <footer>
-        <div class="copyright">
-            <p>Copyright &copy;2024 Praxis Learning Centre</p>
-        </div>
+      <div class="copyright">
+        <p>Copyright &copy;2024 Praxis Learning Centre</p>
+      </div>
     </footer>
     <script>
-        $("#menu-btn").click(function () {
-            $("nav .navigation ul").addClass("active");
-        });
-        $("#menu-close").click(function () {
-            $("nav .navigation ul").removeClass("active");
-        });
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
     </script>
-</body>
-
+  </body>
 </html>
