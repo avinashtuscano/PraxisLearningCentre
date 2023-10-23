@@ -579,6 +579,10 @@ footer p {
   width: 100% !important;
 }
 
+.news-img img {
+  width: 100% !important;
+}
+
 /* Gallery Styles */
 #gallery-home {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
