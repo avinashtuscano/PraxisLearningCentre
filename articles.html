@@ -64,7 +64,10 @@
 
     <footer>
       <div class="copyright">
-        <p>Copyright &copy;2024 Praxis Learning Centre</p>
+        <script>
+          const date = document.querySelector(".copyright");
+          date.innerHTML = `<p>Copyright &copy; ${new Date().getFullYear()} Praxis Learning Centre </p>`;
+        </script>
       </div>
     </footer>
     <script>

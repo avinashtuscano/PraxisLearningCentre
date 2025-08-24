@@ -143,11 +143,34 @@
           </a>
           <figcaption>Primary Classroom</figcaption>
         </figure>
+        <figure>
+          <a
+            href="./img/gandhi_jayanti1.jpg"
+            data-lightbox="school"
+            data-title="Primary Classroom"
+          >
+            <img src="./img/gandhi_jayanti1.jpg" alt="Gandhi Jayanti" />
+          </a>
+          <figcaption>Gandhi Jayanti</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="./img/gandhi_jayanti2.jpg"
+            data-lightbox="school"
+            data-title="Primary Classroom"
+          >
+            <img src="./img/gandhi_jayanti2.jpg" alt="Gandhi Jayanti" />
+          </a>
+          <figcaption>Gandhi Jayanti</figcaption>
+        </figure>
       </div>
     </section>
     <footer>
       <div class="copyright">
-        <p>Copyright &copy;2024 Praxis Learning Centre</p>
+        <script>
+          const date = document.querySelector(".copyright");
+          date.innerHTML = `<p>Copyright &copy; ${new Date().getFullYear()} Praxis Learning Centre </p>`;
+        </script>
       </div>
     </footer>
     <script>

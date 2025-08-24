@@ -123,35 +123,78 @@
       </p>
       <div class="expert-box">
         <div class="profile">
-          <img src="./img/Alex_2jpg.jpg" alt="Alex Tuscano" />
+          <img
+            src="./img/Alex_2jpg.jpg"
+            alt="Alex Tuscano"
+            height="200px"
+            width="200px"
+          />
           <h6>Alex Tuscano</h6>
           <p>Director - PRAXIS</p>
         </div>
         <div class="profile">
-          <img src="./img/yeshoda.jpg" alt="Yeshoda KV" />
+          <img
+            src="./img/yeshoda.jpg"
+            alt="Yeshoda KV"
+            height="200px"
+            width="200px"
+          />
           <h6>Yeshoda K.V</h6>
-          <p>Headmistress</p>
+          <p>Head Teacher</p>
+          <p>Teaches: Hindi and English</p>
         </div>
+
         <div class="profile">
-          <img src="./img/job.jpg" alt="Job" />
-          <h6>Job Alias</h6>
-          <p>English Teacher</p>
-        </div>
-        <div class="profile">
-          <img src="./img/jessie.jpg" alt="Jessy" />
-          <h6>Jessy Job</h6>
-          <p>Science Teacher</p>
-        </div>
-        <div class="profile">
-          <img src="./img/Poornima.jpg" alt="Poornima" />
+          <img
+            src="./img/Poornima.jpg"
+            alt="Poornima"
+            height="200px"
+            width="200px"
+          />
           <h6>Poornima A</h6>
-          <p>Maths Teacher</p>
+          <p>Teaches: Maths</p>
+        </div>
+        <div class="profile">
+          <img
+            src="./img/Girija.jpg"
+            alt="Girija"
+            height="200px"
+            width="200px"
+          />
+          <h6>Girija</h6>
+          <p>Teaches: Pre Primary</p>
+        </div>
+        <div class="profile">
+          <img
+            src="./img/Shoba.jpg"
+            alt="Shobha"
+            height="200px"
+            width="200px"
+          />
+          <h6>Shobha</h6>
+          <p>Teaches: Environment Science</p>
+        </div>
+        <div class="profile">
+          <img
+            src="./img/bhavana.jpg"
+            alt="Bhavana"
+            height="200px"
+            width="200px"
+          />
+          <h6>Bhavana</h6>
+          <p>Teaches: Pre Primary and Sports</p>
         </div>
       </div>
+
+    </div>
     </section>
     <footer>
       <div class="copyright">
-        <p>Copyright &copy;2024 Praxis Learning Centre</p>
+        <!-- <p>Copyright &copy;2025 Praxis Learning Centre</p> -->
+        <script>
+          const date = document.querySelector(".copyright")
+          date.innerHTML = `<p>Copyright &copy; ${new Date().getFullYear()} Praxis Learning Centre </p>`
+        </script>
       </div>
     </footer>
     <script>
