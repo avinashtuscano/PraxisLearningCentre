@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Praxis Learning Centre</title>
-    <!-- add icon link -->
+    <!-- Favicon -->
     <link rel="icon" href="./img/praxis-logo.png" type="image/x-icon" />
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/5da7f1b67b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Modern Stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -19,9 +22,9 @@
   </head>
   <body>
     <nav>
-      <a href="./index.html"
-        ><img src="./img/praxis-logo2.png" alt="Praxis Logo"
-      /></a>
+      <a href="./index.html">
+        <img src="./img/praxis-logo2.png" alt="Praxis Logo" />
+      </a>
       <div class="navigation">
         <ul>
           <i id="menu-close" class="fa-solid fa-xmark"></i>
@@ -35,16 +38,18 @@
         <i id="menu-btn" class="fa-solid fa-bars"></i>
       </div>
     </nav>
+
     <section id="home">
       <h2>Breaking the cycle of poverty through education</h2>
       <p>
         The new source of power is not money in the hands of a few, but
-        information in the hands of many - <span>Jason Naisbitt</span>
+        information in the hands of many — <span>Jason Naisbitt</span>
       </p>
       <div class="btn">
         <a class="blue" href="#features">Learn More</a>
       </div>
     </section>
+
     <section id="features">
       <h1>Praxis Learning Centre Offers</h1>
       <div class="fea-base">
@@ -116,6 +121,7 @@
         </div>
       </div>
     </section>
+
     <section id="experts">
       <h1>Faculty</h1>
       <p>
@@ -123,80 +129,48 @@
       </p>
       <div class="expert-box">
         <div class="profile">
-          <img
-            src="./img/Alex_2jpg.jpg"
-            alt="Alex Tuscano"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/Alex_2jpg.jpg" alt="Alex Tuscano" />
           <h6>Alex Tuscano</h6>
           <p>Director - PRAXIS</p>
         </div>
         <div class="profile">
-          <img
-            src="./img/yeshoda.jpg"
-            alt="Yeshoda KV"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/yeshoda.jpg" alt="Yeshoda KV" />
           <h6>Yeshoda K.V</h6>
           <p>Head Teacher</p>
           <p>Teaches: Hindi and English</p>
         </div>
-
         <div class="profile">
-          <img
-            src="./img/Poornima.jpg"
-            alt="Poornima"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/Poornima.jpg" alt="Poornima" />
           <h6>Poornima A</h6>
           <p>Teaches: Maths</p>
         </div>
         <div class="profile">
-          <img
-            src="./img/Girija.jpg"
-            alt="Girija"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/Girija.jpg" alt="Girija" />
           <h6>Girija</h6>
           <p>Teaches: Pre Primary</p>
         </div>
         <div class="profile">
-          <img
-            src="./img/Shoba.jpg"
-            alt="Shobha"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/Shoba.jpg" alt="Shobha" />
           <h6>Shobha</h6>
           <p>Teaches: Environment Science</p>
         </div>
         <div class="profile">
-          <img
-            src="./img/bhavana.jpg"
-            alt="Bhavana"
-            height="200px"
-            width="200px"
-          />
+          <img src="./img/bhavana.jpg" alt="Bhavana" />
           <h6>Bhavana</h6>
           <p>Teaches: Pre Primary and Sports</p>
         </div>
       </div>
-
-    </div>
     </section>
+
     <footer>
       <div class="copyright">
-        <!-- <p>Copyright &copy;2025 Praxis Learning Centre</p> -->
         <script>
-          const date = document.querySelector(".copyright")
-          date.innerHTML = `<p>Copyright &copy; ${new Date().getFullYear()} Praxis Learning Centre </p>`
+          const date = document.querySelector(".copyright");
+          date.innerHTML = `<p>Copyright &copy; ${new Date().getFullYear()} Praxis Learning Centre </p>`;
         </script>
       </div>
     </footer>
+
     <script>
       $("#menu-btn").click(function () {
         $("nav .navigation ul").addClass("active");
